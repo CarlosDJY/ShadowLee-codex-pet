@@ -1,0 +1,26 @@
+﻿{
+  "schemaVersion": 1,
+  "pets": [
+    {
+      "id": "ShadowLee",
+      "displayName": "ShadowLee",
+      "description": "A white-and-blue chibi plush Codex desktop pet with black round ear buns.",
+      "packagePath": "pets/ShadowLee",
+      "manifestPath": "pets/ShadowLee/pet.json",
+      "spritesheetPath": "pets/ShadowLee/spritesheet.webp",
+      "preview": {
+        "contactSheet": "previews/ShadowLee/contact-sheet.png",
+        "review": "previews/ShadowLee/review.json",
+        "validation": "previews/ShadowLee/validation.json"
+      },
+      "sha256": {
+        "spritesheet": "586230d80ad4959a2b53b6305e3d98352edd15325999131a8f94ae82dbfbffc5"
+      },
+      "notes": [
+        "Generated with OpenAI's hatch-pet workflow from front and side plush character references.",
+        "running-left was derived by mirroring running-right to preserve gait consistency."
+      ]
+    }
+  ]
+}
+
