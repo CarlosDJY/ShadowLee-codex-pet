@@ -1,14 +1,16 @@
-# ShadowLee Codex Pet
+# ShadowLee Codex 桌宠
 
-Fan-made animated custom pet for the Codex desktop app.
+[中文](README.md) | [English](README.en.md)
 
-## Preview
+ShadowLee 是一个为 Codex Desktop 制作的自定义动态桌宠。角色基于白发、蓝色发尾、黑色圆形耳饰的 Q 版布偶形象生成，包含 Codex 所需的完整动画状态。
+
+## 预览
 
 ![ShadowLee contact sheet](previews/ShadowLee/contact-sheet.png)
 
-## Install
+## 安装
 
-Install ShadowLee manually:
+在 PowerShell 中运行：
 
 ```powershell
 $pet = "ShadowLee"
@@ -18,9 +20,9 @@ Remove-Item -LiteralPath $dest -Recurse -Force -ErrorAction SilentlyContinue
 Copy-Item -LiteralPath ".\pets\$pet" -Destination $dest -Recurse
 ```
 
-Then restart Codex Desktop or refresh the pet selector.
+安装后重启 Codex Desktop，或者刷新 pet selector，然后选择 `ShadowLee`。
 
-## Files
+## 文件结构
 
 ```text
 pets/
@@ -36,24 +38,30 @@ catalog.json
 scripts/
 ```
 
-## Validate
+## 校验
 
 ```powershell
 python .\scripts\validate_catalog.py
 ```
 
-Expected result:
+预期输出：
 
 ```text
 catalog ok: 1 pet(s)
 ```
 
-## Contract
+## 规格
 
-The spritesheet follows the current Codex custom pet contract:
+该桌宠遵循当前 Codex 自定义 pet spritesheet 规格：
 
-- Format: WebP with alpha.
-- Dimensions: `1536x1872`.
-- Grid: 8 columns x 9 rows.
-- Cell size: `192x208`.
-- Unused cells are fully transparent.
+- 格式：带透明通道的 WebP。
+- 总尺寸：`1536x1872`。
+- 网格：8 列 x 9 行。
+- 单格尺寸：`192x208`。
+- 未使用格子保持完全透明。
+
+## 说明
+
+- `running-left` 由 `running-right` 镜像派生，以保持奔跑动作一致。
+- 预览与 QA 文件位于 `previews/ShadowLee/`。
+- 本仓库只包含本地 Codex Desktop 自定义 pet 包，不包含 Codex Desktop 应用本体。
