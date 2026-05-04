@@ -32,7 +32,7 @@ def main() -> None:
                 errors.append(f"{pet_id}: missing {path.relative_to(ROOT)}")
 
         if manifest_path.is_file():
-            manifest = json.loads(manifest_path.read_text(encoding="utf-8"))
+            manifest = json.loads(manifest_path.read_text(encoding="utf-8-sig"))
             if manifest.get("id") != pet_id:
                 errors.append(f"{pet_id}: manifest id mismatch")
             if manifest.get("displayName") != pet.get("displayName"):

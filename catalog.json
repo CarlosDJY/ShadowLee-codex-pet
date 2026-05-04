@@ -1,4 +1,4 @@
-﻿{
+{
   "schemaVersion": 1,
   "pets": [
     {
@@ -20,7 +20,27 @@
         "Generated with OpenAI's hatch-pet workflow from front and side plush character references.",
         "running-left was derived by mirroring running-right to preserve gait consistency."
       ]
+    },
+    {
+      "id": "ShadowLeeGlasses",
+      "displayName": "ShadowLeeGlasses",
+      "description": "A white-and-blue chibi plush Codex desktop pet wearing sunglasses.",
+      "packagePath": "pets/ShadowLeeGlasses",
+      "manifestPath": "pets/ShadowLeeGlasses/pet.json",
+      "spritesheetPath": "pets/ShadowLeeGlasses/spritesheet.webp",
+      "preview": {
+        "contactSheet": "previews/ShadowLeeGlasses/contact-sheet.png",
+        "review": "previews/ShadowLeeGlasses/review.json",
+        "validation": "previews/ShadowLeeGlasses/validation.json"
+      },
+      "sha256": {
+        "spritesheet": "13b25e8703b3f919ac9b654ab0ce8b455a77cea4f220122c1b165eccaa0c3b7c"
+      },
+      "notes": [
+        "Generated with OpenAI's hatch-pet workflow from a plush character reference wearing sunglasses.",
+        "running-left was derived by mirroring running-right to preserve gait consistency.",
+        "waving was regenerated after review to make the greeting motion clearer."
+      ]
     }
   ]
 }
-
